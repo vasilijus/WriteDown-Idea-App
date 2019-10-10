@@ -1,0 +1,21 @@
+{
+  "name": "live_project_ideas",
+  "version": "1.0.0",
+  "description": "Publish ideas",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app"
+  },
+  "keywords": [
+    "express",
+    "feathersjs"
+  ],
+  "author": "Sergio V",
+  "license": "ISC",
+  "dependencies": {
+    "@feathersjs/express": "^4.3.5",
+    "@feathersjs/feathers": "^4.3.4",
+    "@feathersjs/socketio": "^4.3.5",
+    "moment": "^2.24.0"
+  }
+}
