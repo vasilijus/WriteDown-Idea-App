@@ -5,8 +5,32 @@ const moment = require('moment');
 
 
 // Idea Servvice
+class IdeaService {
+    constructor() {
+        this.ideas = [];
+    }
 
-const  app = express(feathers() );
+    async find() {
+        return this.ideas;
+    }
+
+    async create(data) {
+        const idea = {
+            id: this.ideas.length,
+            text: this.data.text,
+            tech: this.data.tech,
+            viewer: data.viewer
+        }
+        idea.time = moment().format('hh:mm:ss a');
+
+        this.ideas.push(idea);
+
+        return idea;
+    }
+}
+
+
+const app = express(feathers() );
 
 // Parse JSON
 app.use(express.json());
