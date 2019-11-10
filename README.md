@@ -12,3 +12,10 @@ npm start
 
 # Open index.html
 ```
+
+```
+Front end: open index.html
+```
+```
+Back  end: http://localhost:3030/ideas
+```
